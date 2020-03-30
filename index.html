@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Weather Dashboard</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+   
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+<!-- Search Jumbotron -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="card mt-5">
+                <h4>Search History</h4>
+                <ul  class="list-unstyled" id="search-history">
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <div class="jumbotron mt-5">
+                <h1 class="display-4 text-center">Weather Dashboard</h1>
+                <!-- Search form -->
+                <div class="md-form mt-0">
+                     <input class="form-control" type="text" placeholder="Search for a city to get started" aria-label="Search">
+                     <button id="search">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- This is where the weather results will go -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            <!-- Empty Space -->
+        </div>
+        <div class="col-lg-9">
+            <div class="card" id="weather-card"></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
